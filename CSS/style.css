@@ -23,15 +23,12 @@
     background-color: rgb(241, 241, 147);
 } */
 
-main> .hero_img {
+/* main> .hero_img {
     height:400px;
     background-color: fuchsia;
-} 
+}  */
 
-body {
-    width: 1400px;
-    margin: auto;
-}
+
 
 div> .title_row {
     height: 100px;
@@ -52,6 +49,10 @@ div> .main_section {
 
 /* </debug rules */
 
+body {
+    width: 1400px;
+    margin: auto;
+}
 
 .logo> img {
     width: 150px;
@@ -69,11 +70,10 @@ nav> a {
     padding: 5px;
 }
 
-
-
 .hero_img {
-    
+    background-image: url(../img/banner.jpg);
 }
+
 
 .title_row {
     
