@@ -6,42 +6,9 @@
     font-family: 'Roboto', sans-serif;
 }
 
-/* debug rules */
-
-/* body>header {
-    background-color: yellow;
-    height: 160px;
-    background-color: yellow;
-} */
-
-/* header> .logo {
-    height: 100px;
-    width: 150px;
-    background-color: brown;
-} */
-
- /* nav, footer {
-    height: 60px;
-    background-color: rgb(241, 241, 147);
-} */
-
-/* main> .hero_img {
-    height:400px;
-    background-color: fuchsia;
-}  */
-
-
-
-/* div> .title_row { */
-    /* height: 100px;
-    background-color: green; */
-    /* margin: 10px 0; */
-/* } */
-
-
-
-/* </debug rules */
-
+:root {
+    --color-text: #969696;
+}
 body {
     width: 1400px;
     margin: auto;
@@ -59,7 +26,7 @@ body {
 
 nav> a {
     text-decoration: none;
-    color: lightslategray;
+    color: var(--color-text);
     padding: 5px;
 }
 
@@ -69,8 +36,20 @@ nav> a {
     background-position: center;
     height: 500px;
     position:relative;
-    border-radius: 10px;
+    
+    
 }
+
+.hero_img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 10px;
+  }
 
 .hero_img> section {
     padding: 50px 30px;
@@ -96,7 +75,6 @@ nav> a {
 }
 
 
-
 .clearfix::after {
     content: "";
     display: table;
@@ -116,16 +94,26 @@ nav> a {
     float:left;
     border: 1px solid black;
     height: 225px;
+    
 }
+
 
 .article img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    f
 }
-    
+
+.article p {
+    color: var(--color-text);
+}
 .text_article> h3 {
     font-weight: bold;
     margin: 10px 0;
+}
+
+.red {
+    color: red;
 }
     
